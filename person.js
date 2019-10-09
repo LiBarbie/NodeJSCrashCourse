@@ -3,4 +3,14 @@ const person = {
     age : 30
 }//Person
 
-module.exports = person;
+class Person{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }//Constructor
+
+    greeting(){
+        return "My name is "+this.name+" and I am "+this.age+".";
+    }
+}//Person
+module.exports = Person;

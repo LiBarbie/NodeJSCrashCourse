@@ -1,5 +1,7 @@
 console.log("Hello World from NodeJS");
 console.log("Trying something new");
 
-const person = require("./person.js");
-console.log("Found a new person : "+person.name+" - "+person.age+" years old.");
+const Person = require("./person.js");
+
+const person1 = new Person("John Doe",30);
+console.log(person1.greeting());
