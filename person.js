@@ -11,6 +11,7 @@ class Person{
 
     greeting(){
         return "My name is "+this.name+" and I am "+this.age+".";
-    }
+    }//greeting
 }//Person
+
 module.exports = Person;
