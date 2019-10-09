@@ -1,0 +1,3 @@
+Hello world!
+I'm Linda, nice to meet you!
+Added a new part to the file!
