@@ -1,9 +1,9 @@
-console.log("Hello World from NodeJS");
-console.log("Trying something new");
+const Logger = require('./logger');
 
-const Person = require("./person.js");
+const logger = new Logger();
 
-const person1 = new Person("John Doe",30);
-console.log(person1.greeting());
+logger.on('message',(data)=> console.log('Called Listener: ',data));
 
-console.log(__dirname, __filename);
+logger.log('Hello World');
+logger.log('Hi');
+logger.log('Helo');
